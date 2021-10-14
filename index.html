@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktu administravimas</title>
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-$END$
+
+<div class="registration">
+    <h1>Produkto aprasymas</h1>
+    <form>
+        <div class="input-field">
+            <label>Pavadinimas:</label>
+            <input id="name" type="text">
+        </div>
+        <div class="input-field">
+            <label>Rusys:</label>
+            <input id="surname" type="text">
+        </div>
+        <div class="input-field">
+            <label>Aprasymas:</label>
+            <input id="email" type="email">
+        </div>
+        <div class="input-field">
+            <label>Gautas:</label>
+            <input id="dateFrom" type="date">
+        </div>
+        <div class="input-field">
+            <label>Parduotas:</label>
+            <input id="dateTo" type="date">
+        </div>
+
+        <div class="button-wrapper">
+            <div id="registration-button" class="btn primary-button">Uzpajamuoti</div>
+
+        </div>
+    </form>
+</div>
+<div id="notification" class="display-none"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
